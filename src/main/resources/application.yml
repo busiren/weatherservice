@@ -1,0 +1,31 @@
+info.app:
+  name: DashboardService
+  updateSettingsTtl: 5 #minutes
+  version: @project.version@
+
+server:
+  port: 8080
+spring:
+  application:
+    name: weatherservice
+  datasource:
+    url: jdbc:h2:file:./data/metrics
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+logging:
+  file:
+    name: weatherservice.log
+cities:
+  Moscow,
+  London,
+  Kazan
+openWeatherMap:
+  key: "7f314a9209c626ffd2e36cbfe9f7936c"
+weatherApi:
+  key: "490ac65c8cca4628b1b222456213001"
+cron: 0 * * * * *
