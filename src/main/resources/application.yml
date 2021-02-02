@@ -25,7 +25,7 @@ cities:
   London,
   Kazan
 openWeatherMap:
-  key: "7f314a9209c626ffd2e36cbfe9f7936c"
+  key:
 weatherApi:
-  key: "490ac65c8cca4628b1b222456213001"
+  key:
 cron: 0 * * * * *
